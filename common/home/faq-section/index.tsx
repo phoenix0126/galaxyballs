@@ -12,7 +12,7 @@ const FaqSection: React.FC<PageProps> = ({ language }) => {
 
   return (
     <Wrapper>
-      {/* <FaqSectionContainer>
+      <FaqSectionContainer>
         <Title>{trans(language, 'home', 'faq-title')}</Title>
         <Description>{trans(language, 'home', 'faq-description')}</Description>
         <CardListWrapper>
@@ -55,7 +55,7 @@ const FaqSection: React.FC<PageProps> = ({ language }) => {
             })}
           </CardList>
         </CardListWrapper>
-      </FaqSectionContainer> */}
+      </FaqSectionContainer>
     </Wrapper>
   )
 }
