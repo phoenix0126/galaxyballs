@@ -2,23 +2,49 @@
   "name": "galaxy-balls",
   "version": "0.1.0",
   "private": true,
+  "main": "function.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "export": "next export",
+    "deploy": "yarn build && cross-env NODE_ENV=production firebase deploy --only functions,hosting",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
-    "next": "12.3.1",
+    "cross-env": "^7.0.3",
+    "firebase-admin": "^11.0.1",
+    "firebase-functions": "^3.24.0",
+    "i18next": "^21.9.2",
+    "i18next-browser-languagedetector": "^6.1.5",
+    "next": "12.3.0",
+    "next-export-i18n": "^2.0.3",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-gallery-carousel": "^0.2.10",
+    "react-icons": "^4.4.0",
+    "react-perfect-scrollbar": "^1.5.8",
+    "react-responsive": "^9.0.0",
+    "react-spring": "^9.5.4",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
-    "@types/node": "18.11.2",
-    "@types/react": "18.0.21",
+    "@builder.io/partytown": "^0.7.0",
+    "@types/node": "18.7.18",
+    "@types/react": "18.0.20",
     "@types/react-dom": "18.0.6",
-    "eslint": "8.25.0",
-    "eslint-config-next": "12.3.1",
-    "typescript": "4.8.4"
+    "@types/react-gallery-carousel": "^0.2.2",
+    "@types/styled-components": "^5.1.26",
+    "babel-plugin-styled-components": "^2.0.7",
+    "cypress": "^10.8.0",
+    "eslint": "8.23.1",
+    "eslint-config-next": "12.3.0",
+    "start-server-and-test": "^1.14.0",
+    "typescript": "4.8.3"
   }
 }
