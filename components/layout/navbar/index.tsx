@@ -11,10 +11,10 @@ import Menu from './menu'
 import type { LangStaticData } from '../../../types/navbar'
 import { langStaticData, languages } from '../../../static/lang-static-data'
 
-// interface LinkComponentProps {
-//   children: any
-//   locale: any
-//   href?: any
+interface LinkComponentProps {
+  children: any
+  locale: any
+  href?: any
 }
 
 export const LinkComponent: React.FC<LinkComponentProps> = ({ children, locale, ...props }) => {
