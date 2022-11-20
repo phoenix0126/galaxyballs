@@ -15,7 +15,7 @@ import { getAllLanguageSlugs, getLanguage } from '../../i18n'
 const Home: NextPage<PageProps> = ({ language }) => {
   return (
     <>
-      <IntroSection language={language} />
+      {/* <IntroSection language={language} />
       <DownloadSection />
       <GameSection language={language} />
       <RuleSection language={language} />
@@ -23,7 +23,7 @@ const Home: NextPage<PageProps> = ({ language }) => {
       <WinnersSection language={language} />
       <ConditionSection language={language} />
       <PrizesSection language={language} />
-      <FaqSection language={language} />
+      <FaqSection language={language} /> */}
     </>
   )
 }
