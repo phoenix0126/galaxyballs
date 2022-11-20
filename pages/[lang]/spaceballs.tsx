@@ -16,10 +16,10 @@ const SpaceBalls: NextPage<PageProps> = ({ language }) => {
       <IntroSection language={language} />
       <ChanceSection language={language} />
       <FeaturesSection language={language} />
-      <AdventureSection language={language} />
+      {/* <AdventureSection language={language} />
       <ValueSection language={language} />
       <FinalSection language={language} />
-      <MoreSection language={language} />
+      <MoreSection language={language} /> */}
     </>
   )
 }

@@ -20,9 +20,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         </>
       ) : (
         <PerfectScrollbar style={{ height: '100vh' }}>
-          <Navbar />
+          {/* <Navbar />
           <main>{children}</main>
-          {router.pathname !== '/documents' && <Footer />}
+          {router.pathname !== '/documents' && <Footer />} */}
         </PerfectScrollbar>
       )}
     </>
